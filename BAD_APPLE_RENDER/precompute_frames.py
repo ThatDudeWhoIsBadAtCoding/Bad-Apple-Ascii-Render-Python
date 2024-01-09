@@ -4,7 +4,6 @@ import shutil
 
 
 invert = input("Enter 'e' if you want to pre-compute inverted frames else just press enter: ").lower()
-
 cap = cv2.VideoCapture("BAD_APPLE_RENDER/badapple.mp4")
 fps = cap.get(cv2.CAP_PROP_FPS)
 
@@ -50,7 +49,7 @@ while True:
 
     if cv2.waitKey(1) & 0xFF == ord('q'): break
     
-with open('/Users/pockchan/VS_CODE_PROJECTS/one_hour_project_01/BAD_APPLE_RENDER/ascii_frames{}.txt'.format("_reverse" if invert else ""), 'w') as file:
+with open('BAD_APPLE_RENDER/ascii_frames{}.txt'.format("_reverse" if invert else ""), 'w') as file:
     file.write(all_frames_ascii)
 
 
