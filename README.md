@@ -5,3 +5,5 @@ You can either run the computation live (but its going to be offsync) or you can
 then it can run smoothly at the cost of some storage, im still not sure how to sync it properly without pre-computing
 
 also you can choose whether you want to invert the frames or not
+
+Here is the render (precomputed, frames not inverted) -> https://youtu.be/qfnP3y7ExBY
